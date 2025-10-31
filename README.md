@@ -325,7 +325,49 @@ dan berkelanjutan, <br> sejalan dengan tujuan SDGs.
 ---
 
 ## Struktur package
-ini ss aja strukturnya terus jelasin aja singkat tentang kegunaan folder atau packagenya
+1. Koneksi Database
+   
+   <img width="366" height="39" alt="image" src="https://github.com/user-attachments/assets/326066df-3609-40d0-931f-9261bc9d09fc" />
+
+   Package `KoneksiDB` berfungsi untuk mengatur dan menghubungkan aplikasi dengan database MySQL melalui class `KoneksiDatabase.java`.
+
+2. Model
+
+   <img width="365" height="165" alt="image" src="https://github.com/user-attachments/assets/e451529a-c409-4a2b-96a6-c0a9ee665440" />
+
+   Package `Model` berisi class-class yang merepresentasikan data utama sistem seperti pengguna, fasilitas, laporan, dan entitas terkait pengelolaan lingkungan.
+
+3. Service
+   
+   <img width="364" height="38" alt="image" src="https://github.com/user-attachments/assets/6a5f698e-f7b1-4447-b02b-6c05301bf2d9" />
+
+   Package Service berisi class yang menangani logika bisnis dan menghubungkan antara data pada model dengan proses dalam aplikasi.
+
+4. bumi_nusantara
+
+   <img width="364" height="38" alt="image" src="https://github.com/user-attachments/assets/71b01d7f-e8f0-442d-a029-93a2d574c1c5" />
+
+   Package `bumi_nusantara` berisi class utama `Bumi_Nusantara.java` yang menjadi titik awal atau entry point dalam menjalankan aplikasi.
+
+5. images
+
+   <img width="363" height="379" alt="image" src="https://github.com/user-attachments/assets/79ac91ba-b9a5-4813-abd7-fe63d69ea2b0" />
+
+   Folder `images` berisi berbagai file gambar yang digunakan sebagai aset visual dalam antarmuka aplikasi seperti ikon, banner, dan elemen desain lainnya.
+
+6. view
+
+   <img width="363" height="250" alt="image" src="https://github.com/user-attachments/assets/ca65526b-4c95-4198-8e94-e5740d1ddcbc" />
+
+   Folder view berisi berbagai file Java yang digunakan untuk menampilkan antarmuka pengguna (UI) seperti login, menu utama, peta, dan pengelolaan data oleh admin maupun user.
+
+7. Libraries
+
+   <img width="365" height="166" alt="Screenshot 2025-10-31 231209" src="https://github.com/user-attachments/assets/ac1a64a8-7a5a-482a-a01e-2f258170a967" />
+
+   Folder Libraries berisi file .jar yang dibutuhkan untuk menjalankan aplikasi, seperti konektor MySQL, tampilan antarmuka (FlatLaf & AbsoluteLayout), pustaka tambahan (commons-logging, jxmapviewer), serta      JDK 24 sebagai lingkungan pengembangan utama.
+
+
 ## Library atau Framework yang digunakan (jika menerapkan nilai tambah)
 ini kosongin aja dulu soalnta masih gatau pake atau enga
 ## Cara menggunakan program, sertakan screenshoot GUI.
