@@ -367,8 +367,12 @@ dan berkelanjutan, <br> sejalan dengan tujuan SDGs.
 
    Folder Libraries berisi file .jar yang dibutuhkan untuk menjalankan aplikasi, seperti konektor MySQL, tampilan antarmuka (FlatLaf & AbsoluteLayout), pustaka tambahan (commons-logging, jxmapviewer), serta      JDK 24 sebagai lingkungan pengembangan utama.
 
-
 ## Library atau Framework yang digunakan (jika menerapkan nilai tambah)
-ini kosongin aja dulu soalnta masih gatau pake atau enga
+- Menerapkan MVC pada program
+  
+   <img width="372" height="231" alt="image" src="https://github.com/user-attachments/assets/40128a3e-ae4b-4acd-aca6-cfee16638174" />
+
+   Struktur folder pada proyek ini sudah menerapkan pola MVC untuk nilai tambah, dengan pembagian package untuk model, view, service (controller), koneksi database, dan aset gambar.
+
 ## Cara menggunakan program, sertakan screenshoot GUI.
 ini jelasin dulu gimana cara pakenya baru di ss GUI nya
