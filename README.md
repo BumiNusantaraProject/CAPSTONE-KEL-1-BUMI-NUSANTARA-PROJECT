@@ -324,7 +324,7 @@ dan berkelanjutan, <br> sejalan dengan tujuan SDGs.
 
 ---
 
-## Struktur package
+## 🗂️ Struktur package
 1. Koneksi Database
    
    <img width="366" height="39" alt="image" src="https://github.com/user-attachments/assets/326066df-3609-40d0-931f-9261bc9d09fc" />
@@ -367,7 +367,7 @@ dan berkelanjutan, <br> sejalan dengan tujuan SDGs.
 
    Folder Libraries berisi file .jar yang dibutuhkan untuk menjalankan aplikasi, seperti konektor MySQL, tampilan antarmuka (FlatLaf & AbsoluteLayout), pustaka tambahan (commons-logging, jxmapviewer), serta      JDK 24 sebagai lingkungan pengembangan utama.
 
-## Library atau Framework yang digunakan (jika menerapkan nilai tambah)
+## 📂 Library atau Framework yang digunakan (jika menerapkan nilai tambah)
 - Menerapkan MVC pada program
   
    <img width="372" height="231" alt="image" src="https://github.com/user-attachments/assets/40128a3e-ae4b-4acd-aca6-cfee16638174" />
