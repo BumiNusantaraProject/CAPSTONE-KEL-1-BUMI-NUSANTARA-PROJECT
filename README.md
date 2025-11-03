@@ -389,6 +389,9 @@ Setiap bagian dilengkapi dengan deskripsi dan fungsi masing-masing GUI, agar pen
 
 <details>
 <summary>🌿 Halaman Menu Login (Pemilihan Peran)</summary>
+
+<img width="816" height="513" alt="image" src="https://github.com/user-attachments/assets/6ea0cab0-2334-4b92-ac9b-08572e7190f0" />
+
 Halaman Menu Login merupakan tampilan pembuka dan merupakan gerbang utama sistem “Sistem Monitoring dan Pengelolaan Fasilitas Hijau”.
 Tujuannya adalah untuk mengarahkan pengguna agar memilih peran (role) sebelum melakukan proses login, yaitu User (masyarakat umum) atau Admin (pihak pengelola/pemerintah).
 
@@ -398,14 +401,20 @@ Sistem ini menerapkan dua tingkat akses berbeda, sehingga pemilihan peran sejak 
 
 <details>
 <summary>🌱 Halaman Login User</summary>
+
+<img width="816" height="513" alt="image" src="https://github.com/user-attachments/assets/a1a1ef4e-f4cf-4d73-b0bb-b75dc811996b" />
+
 Halaman ini merupakan tampilan login khusus bagi pengguna (User/Masyarakat) dalam sistem Sistem Monitoring dan Pengelolaan Fasilitas Hijau.
-Pada halaman ini, pengguna dapat melakukan autentikasi menggunakan email dan password sebelum masuk ke dalam sistem.
+Pada halaman ini, pengguna dapat melakukan autentikasi menggunakan email ataupun username lalu mengisi password sebelum masuk ke dalam sistem.
 Tampilan dirancang dengan konsep green interface yang menonjolkan nilai keberlanjutan dan selaras dengan tema utama proyek Bumi Nusantara Project.
 
 </details>
 
 <details>
 <summary>🌳 Halaman Login Admin</summary>
+
+<img width="816" height="513" alt="image" src="https://github.com/user-attachments/assets/e192c50b-18db-49e6-a539-cf58036c9c84" />
+
 Halaman ini merupakan tampilan login khusus bagi Admin atau pihak pengelola sistem dalam aplikasi Sistem Monitoring dan Pengelolaan Fasilitas Hijau.
 Pada halaman ini, admin dapat masuk menggunakan akun resmi untuk mengakses fitur pengelolaan data, seperti verifikasi laporan, pembaruan fasilitas hijau, serta evaluasi zona wilayah.
 Tampilan dirancang dengan konsep yang seragam dengan halaman login user, menampilkan nuansa hijau alami dan visual pohon besar sebagai simbol pengawasan serta pertumbuhan berkelanjutan.
@@ -414,8 +423,11 @@ Tampilan dirancang dengan konsep yang seragam dengan halaman login user, menampi
 
 <details>
 <summary>🌼 Halaman Registrasi Akun</summary>
+
+<img width="816" height="513" alt="image" src="https://github.com/user-attachments/assets/4ce20663-8efd-43e9-b8b7-e3bce4aec3cd" />
+
 Halaman ini berfungsi sebagai tempat bagi pengguna baru yang belum memiliki akun untuk melakukan registrasi sebelum dapat mengakses sistem Sistem Monitoring dan Pengelolaan Fasilitas Hijau.
-Melalui halaman ini, masyarakat dapat membuat akun dengan mengisi email dan password, yang nantinya tersimpan dalam basis data dan digunakan untuk proses login.
+Melalui halaman ini, masyarakat dapat membuat akun dengan mengisi email ataupun username lalu mengisi password, yang nantinya tersimpan dalam basis data dan digunakan untuk proses login.
 
 Desain tampilan dibuat sederhana dan interaktif, menampilkan warna hijau alami dengan latar foto aktivitas luar ruang yang menggambarkan interaksi manusia dan lingkungan.
 Teks sapaan “Hi, buat akun dulu yok!” memberikan nuansa ramah dan mengajak pengguna untuk bergabung secara positif dalam sistem berbasis lingkungan digital ini.
@@ -424,25 +436,48 @@ Teks sapaan “Hi, buat akun dulu yok!” memberikan nuansa ramah dan mengajak p
 
 <details>
 <summary>🌿 Halaman Utama User (User Home Menu)</summary>
+
+<img width="816" height="513" alt="image" src="https://github.com/user-attachments/assets/29cb8cba-eaa5-436c-8c68-ab4c8c2d9b23" />
+
 Halaman ini merupakan tampilan utama yang akan muncul setelah user berhasil login ke dalam aplikasi Sistem Monitoring dan Pengelolaan Fasilitas Hijau.
 Dari halaman ini, pengguna dapat mengakses seluruh fitur utama yang disediakan oleh sistem secara terpusat dan efisien.
 Antarmuka didesain dengan visual pepohonan hijau yang tertutup kabut, melambangkan keseimbangan alam dan tanggung jawab bersama dalam menjaga bumi.
 
 **🌱 Fitur Utama pada Halaman User**
 1. Laporkan!
+
+   <img width="816" height="513" alt="image" src="https://github.com/user-attachments/assets/354cb6fb-2b54-4a4f-8cca-664ae6d74246" />
+
 - Fitur ini memungkinkan pengguna untuk mengirim laporan lingkungan, seperti area tidak higienis, taman rusak, atau wilayah yang memerlukan perhatian.
-- User dapat menambahkan detail laporan, alamat lokasi, serta foto pendukung sebelum dikirim ke sistem.
+- User dapat menambahkan detail laporan, alamat lokasi, serta foto pendukung sebelum dikirim ke sistem.  
+- Selain itu, user juga dapat secara langsung melihat Laporan-laporan yang sebelumnya telah di isi oleh user user lain.
+  
+  <img width="813" height="510" alt="image" src="https://github.com/user-attachments/assets/58b1caa2-2c25-41e6-948f-95c19a944263" />
+
+- Bahkan juga dapat melihat Laporan secara lebih detail, seperti melihat berbagai keterangan nya, lalu Lokasi Maps, serta Gambar yang di input sebagai bukti.
+
 2. Fasilitas
+   
+   <img width="816" height="513" alt="image" src="https://github.com/user-attachments/assets/2e1338c0-fb28-43b2-9a01-3910e41d87e3" />
+
 - Menampilkan daftar fasilitas hijau di sekitar wilayah pengguna, seperti TPA, bank sampah, taman, dan tapak berkelanjutan.
 - Data fasilitas diambil langsung dari database dan dapat dilihat berdasarkan kelurahan yang telah terdaftar.
+- User juga dapat melihat secara lebih detail mengenai berbagai Fasilitas yang telah terdata dengan rapih. Seperti melihat nama fasilitas, lokasi, jenis, kelurahan, koordinat, luas lahan, dan kondisi fasilitas tersebut.
+
 3. Wilayah (Maps View)
-- Fitur ini menampilkan peta digital interaktif dengan titik-titik lokasi fasilitas hijau yang telah dimasukkan dalam sistem.
+   
+   <img width="816" height="513" alt="image" src="https://github.com/user-attachments/assets/8f28bf60-8612-454a-adaf-7e72532821a9" />
+
+- Fitur ini menampilkan peta digital interaktif dengan titik-titik lokasi fasilitas hijau yang telah dimasukkan dalam sistem
 - Melalui tampilan ini, user dapat mengetahui persebaran fasilitas di kotanya serta mendukung evaluasi zona hijau (Hijau – Kuning – Merah).
 
 </details>
 
 <details>
 <summary>🌾 Halaman Tambah Laporan (User Add Report)</summary>
+
+<img width="816" height="513" alt="image" src="https://github.com/user-attachments/assets/aeab1fea-2fce-4894-b6f1-d5737708dfb6" />
+
 Halaman ini merupakan tampilan yang muncul ketika user memilih fitur “Laporkan!” dari menu utama.
 Di halaman ini, pengguna dapat mengirim laporan mengenai kondisi lingkungan seperti wilayah kotor, taman rusak, atau fasilitas hijau yang tidak terawat.
 Halaman ini menjadi bentuk nyata partisipasi masyarakat dalam mendukung pengelolaan fasilitas hijau berbasis digital, sejalan dengan tujuan Bumi Nusantara Project.
@@ -450,24 +485,61 @@ Halaman ini menjadi bentuk nyata partisipasi masyarakat dalam mendukung pengelol
 **🌱 Fitur Utama pada Halaman Ini**
 1. Form Laporan
 - User dapat menulis deskripsi laporan yang menjelaskan kondisi atau masalah yang ditemukan di lapangan.
-- Contohnya: “Tempat sampah penuh di taman Samarendah” atau “Rumput taman di kelurahan Air Hitam mulai kering dan tidak terawat.”
+  
+  <img width="816" height="513" alt="image" src="https://github.com/user-attachments/assets/498623c5-a76c-4d00-8c50-341751f3ee6b" />
+
+- Contohnya adalah seperti yang ada pada gambar diatas.
+
 2. Kolom Alamat dan Kelurahan
 - Pengguna wajib mengisi alamat lengkap lokasi kejadian dan memilih kelurahan sesuai dengan wilayah administratif.
+  
+  <img width="524" height="134" alt="image" src="https://github.com/user-attachments/assets/9497b9ca-4705-48d0-9a37-c5061357ee1c" />
+
 - Data ini membantu sistem dalam mengaitkan laporan dengan wilayah yang tepat.
 3. Upload Foto Bukti
 - User dapat mengunggah foto kondisi area sebagai bukti visual yang akan tersimpan di basis data.
+  
+  <img width="240" height="52" alt="image" src="https://github.com/user-attachments/assets/5c773842-4ee1-4dc1-ae81-449ac92def72" />
+
 - Fitur ini membantu admin memverifikasi keaslian laporan.
+  
 4. Pilih Lokasi (Tandai pada Peta)
 - Pengguna dapat menandai lokasi kejadian dengan cara menjatuhkan pin di peta interaktif.
+  
+  <img width="822" height="527" alt="image" src="https://github.com/user-attachments/assets/6cf3e19f-4261-4ff1-bfa3-2a2324078398" />
+
 - Lokasi ini akan otomatis tersimpan dalam atribut latitude dan longitude di database.
+  
 5. Tombol “Laporkan!”
+   
+   <img width="814" height="511" alt="image" src="https://github.com/user-attachments/assets/295ae560-2b75-4334-9726-bef85694984e" />
+
 - Setelah semua kolom diisi, pengguna dapat menekan tombol ini untuk mengirim laporan ke sistem.
 - Data laporan akan tersimpan dan dapat dilihat di menu “Lihat laporan lain”.
 
+6. Lihat Laporan
+   - User juga dapat melihat berbagai laporan-laporan yang telah di laporkan oleh berbagai user sebelumnya. Dengan meng-klik tombol "Lihat laporan lain!"
+
+     <img width="816" height="513" alt="image" src="https://github.com/user-attachments/assets/1f0e5d00-5f3b-4666-8cd2-49ae4f834a6b" />
+   
+  - Bahkan User juga dapat melihat secara lebih detail mengenai isi laporan laporan yang ada, mulai dari Id yang melapor, tanggal lapor, alamak lokasi yang dilaporkan, id kelurahan, status nya, koordinat lokasi, lalu deksrispsi nya.
+
+  - Selain itu, user juga dapat melihat dengan detail letak titik koordinat pada maps.
+    
+    <img width="826" height="529" alt="image" src="https://github.com/user-attachments/assets/a5078ff8-951e-4d25-ab7d-12bc21974083" />
+
+  - Kemudian, user juga dpaat melihat Gambar yang di Upload oleh user yang melapor dengan detail,
+
+    <img width="809" height="511" alt="image" src="https://github.com/user-attachments/assets/f533eb33-28b6-4376-a07f-2bf6d21f4230" />
+
+  
 </details>
 
 <details>
 <summary>🌿 Halaman Fasilitas (User View Fasilitas)</summary>
+
+<img width="816" height="513" alt="image" src="https://github.com/user-attachments/assets/65e3c611-dfd7-48ea-a8ab-cbbfe954738d" />
+
 Halaman ini merupakan tampilan lanjutan dari menu utama user, di mana pengguna dapat melihat berbagai fasilitas hijau yang sudah terdaftar dalam sistem.
 Fasilitas yang ditampilkan meliputi berbagai jenis sarana pendukung lingkungan seperti TPA (Tempat Pembuangan Akhir), Bank Sampah, Taman, dan Tapak Berkelanjutan, lengkap dengan informasi nama fasilitas, jenis, lokasi, serta kelurahan tempat fasilitas tersebut berada.
 
@@ -476,11 +548,20 @@ Halaman ini membantu masyarakat untuk lebih mengenal fasilitas hijau di sekitarn
 **🌱 Fitur Utama**
 1. Tabel Data Fasilitas
 - Menampilkan daftar seluruh fasilitas yang tersimpan di database berdasarkan data pada tabel fasilitas.
+  
+  <img width="913" height="316" alt="image" src="https://github.com/user-attachments/assets/46278a97-7542-40f3-ad7d-5dbed9a85be0" />
+
 - Kolom utama terdiri dari Nama, Jenis, Lokasi, dan Kelurahan.
 2. Tombol “Lihat Detail”
 - Pengguna dapat memilih salah satu fasilitas dan menekan tombol ini untuk menampilkan pop-up detail fasilitas.
+  
+  <img width="814" height="512" alt="image" src="https://github.com/user-attachments/assets/64269a65-a708-4dc0-bee1-4113aa1f0736" />
+
 - Pop-up akan berisi informasi tambahan seperti kapasitas TPA, nama pengelola bank sampah, kondisi tapak berkelanjutan, atau jam operasional.
 3. Tombol “Kembali”
+  
+  <img width="89" height="49" alt="image" src="https://github.com/user-attachments/assets/6e268a23-5587-468a-a468-5d0402a743cf" />
+
   Mengarahkan user kembali ke halaman utama (User Home Menu).
 
 </details>
@@ -509,6 +590,9 @@ Melalui halaman ini, user juga dapat meninjau detail laporan, lokasi, serta foto
 
 <details>
 <summary>🗺️ Halaman Wilayah (User Read Area)</summary>
+
+<img width="816" height="513" alt="image" src="https://github.com/user-attachments/assets/1ffda875-66c5-451a-b7b4-37e40d9a600e" />
+
 Halaman User Read Area merupakan fitur yang memungkinkan user melihat kondisi wilayah atau area kelurahan di sekitarnya berdasarkan data fasilitas hijau yang telah tersimpan di sistem Sistem Monitoring dan Pengelolaan Fasilitas Hijau.
 Pada halaman ini, setiap wilayah ditampilkan secara visual menggunakan peta dengan indikator zona warna, yang merepresentasikan tingkat keberlanjutan lingkungan berdasarkan jumlah dan kondisi fasilitas hijau di area tersebut.
 
@@ -517,8 +601,14 @@ Fitur ini memberikan gambaran menyeluruh mengenai zona lingkungan (merah, kuning
 **🌱 Fitur Utama**
 1. Peta Fullscreen Interaktif
 - Menampilkan peta seluruh wilayah dengan penanda fasilitas hijau, titik laporan, serta zona kelurahan.
+  
+  <img width="149" height="158" alt="image" src="https://github.com/user-attachments/assets/085d4d3d-4759-4567-929b-108d71dd2969" />
+
 - Pengguna dapat memperbesar area tertentu untuk melihat lokasi fasilitas lebih detail.
 2. Tombol “Kembali”
+  
+  <img width="130" height="49" alt="image" src="https://github.com/user-attachments/assets/ff7ea9ca-4031-4615-87d5-2cabfda5cc1f" />
+
 - Mengembalikan pengguna ke halaman sebelumnya (User Read Area).
 3. Integrasi dengan Data Sistem
 - Data koordinat (latitude, longitude) diambil langsung dari tabel kelurahan dan fasilitas untuk memastikan akurasi posisi peta.
@@ -527,6 +617,9 @@ Fitur ini memberikan gambaran menyeluruh mengenai zona lingkungan (merah, kuning
 
 <details>
 <summary>🗺️ Halaman Peta Wilayah (Full Map View)</summary>
+
+<img width="826" height="529" alt="image" src="https://github.com/user-attachments/assets/08fd2648-a9d4-4f0e-8da3-48f8f2b3abd6" />
+
 Halaman Full Map View berfungsi sebagai tampilan peta utama yang terhubung langsung dengan seluruh fitur lain yang menampilkan peta dalam sistem Sistem Monitoring dan Pengelolaan Fasilitas Hijau.
 Artinya, setiap kali pengguna ingin melihat lokasi fasilitas, titik laporan, maupun zona wilayah, sistem akan mengarahkan atau membuka tampilan peta penuh ini agar informasi bisa dilihat dengan lebih jelas dan menyeluruh.
 
@@ -539,13 +632,18 @@ Halaman ini memudahkan pengguna untuk menavigasi seluruh data spasial dalam satu
   - Lokasi fasilitas dari fitur Fasilitas.
   - Zona wilayah dari fitur User Read Area.
 - Semua data divisualisasikan secara bersamaan agar pengguna mendapatkan gambaran kondisi wilayah secara utuh.
+  
 2. Navigasi Antar-Fitur
 - Halaman ini bisa diakses dari beberapa tombol “Lihat Lokasi” pada fitur lain.
 - Ketika pengguna memilih lokasi dari laporan atau fasilitas tertentu, sistem otomatis menyorot titik tersebut di peta penuh ini.
+  
 3. Tampilan Luas dan Interaktif
 - Peta dapat diperbesar atau digeser dengan leluasa untuk melihat area lain.
-- Warna indikator tetap konsisten dengan legenda zona (merah–kuning–hijau) dari halaman Wilayah.
+  
 4. Tombol “Kembali”
+
+  <img width="219" height="82" alt="image" src="https://github.com/user-attachments/assets/7f93e6b5-e4ed-4af0-b63b-1be4b8be47d8" />
+
 - Mengarahkan pengguna kembali ke fitur asal (Laporan, Fasilitas, atau Wilayah) tanpa kehilangan konteks data yang sedang dibuka.
 
 
@@ -553,6 +651,9 @@ Halaman ini memudahkan pengguna untuk menavigasi seluruh data spasial dalam satu
 
 <details>
 <summary>🖥️ Halaman Utama Admin (Admin Home Menu)</summary>
+
+<img width="816" height="513" alt="image" src="https://github.com/user-attachments/assets/3a4f71be-63db-43fa-9858-1371301cb499" />
+
 Halaman Admin Home Menu merupakan tampilan utama yang muncul setelah admin berhasil login ke sistem Sistem Monitoring dan Pengelolaan Fasilitas Hijau – Bumi Nusantara Project.
 Halaman ini berfungsi sebagai dashboard pusat kendali bagi admin untuk mengelola seluruh aktivitas sistem, mulai dari verifikasi laporan, pembaruan fasilitas, hingga pemantauan wilayah hijau.
 
@@ -562,12 +663,23 @@ Selain dua menu utama, Menu Laporan dan Menu Fasilitas, halaman ini juga dilengk
 **🌱 Fitur Utama**
 1. Menu Laporan
 - Mengarahkan admin ke halaman pengelolaan laporan dari user.
+  
+  <img width="172" height="85" alt="image" src="https://github.com/user-attachments/assets/13bb0dea-c5ee-4ef2-8269-fa0d1640dfb9" />
+
 - Admin dapat melihat daftar laporan, mengedit data, memperbarui status laporan, atau menghapus laporan yang tidak valid.
+  
 2. Menu Fasilitas
 - Memberikan akses untuk mengelola data seluruh fasilitas hijau seperti taman, TPA, tapak berkelanjutan, dan bank sampah.
+  
+  <img width="177" height="134" alt="image" src="https://github.com/user-attachments/assets/a28d59fc-9522-432a-ad6c-90e119b47b26" />
+
 - Admin dapat menambah fasilitas baru, memperbarui informasi, maupun menghapus data lama.
+  
 3. Tampilan Peta Mini (Mini Map View) 
 - Terletak di bagian bawah halaman utama.
+  
+  <img width="719" height="280" alt="image" src="https://github.com/user-attachments/assets/3a1000d0-2a79-4b41-a7a6-dc884b5ed403" />
+
 - Menampilkan peta interaktif yang menandai posisi seluruh fasilitas yang tersimpan di database.
 - Admin bisa menggeser (scroll/drag) peta untuk menjelajahi area, serta mengklik titik tertentu untuk melihat lokasi lebih detail.
 - Jika titik peta diklik dua kali atau diperbesar, sistem akan otomatis membuka Full Map View, yang merupakan tampilan peta besar terintegrasi.
@@ -580,6 +692,9 @@ Selain dua menu utama, Menu Laporan dan Menu Fasilitas, halaman ini juga dilengk
 
 <details>
 <summary>🧾 Halaman Kelola Laporan (Admin Edit Report)</summary>
+
+<img width="816" height="513" alt="image" src="https://github.com/user-attachments/assets/904b0b36-e788-44ac-aaf6-5918b7a9ce2b" />
+
 Halaman Admin Edit Report merupakan tempat bagi admin untuk mengelola seluruh laporan yang dikirim oleh user.
 Di halaman ini, admin memiliki akses penuh untuk melihat, mengedit, memperbarui status, hingga menghapus laporan, sesuai kebutuhan.
 Tampilan ini didesain agar admin dapat melakukan pengelolaan data dengan cepat dan efisien, disertai antarmuka yang terstruktur dengan baik.
@@ -587,16 +702,40 @@ Tampilan ini didesain agar admin dapat melakukan pengelolaan data dengan cepat d
 **⚙️ Fitur Utama**
 1. Pencarian Berdasarkan ID Laporan
 - Admin dapat memasukkan ID laporan pada kolom pencarian untuk menemukan data tertentu dengan cepat.
+  
+  <img width="816" height="513" alt="image" src="https://github.com/user-attachments/assets/f046d319-9695-461f-af2f-421112f3dffc" />
+
 - Tombol “Cari” berfungsi untuk menampilkan hasil laporan yang relevan, sedangkan tombol “Refresh” digunakan untuk menampilkan ulang seluruh data laporan.
 2. Tabel Data Laporan
 - Berisi daftar laporan yang dikirim oleh user lengkap dengan kolom ID, Tanggal, Lokasi, Foto, Deskripsi, dan Status.
+  
+  <img width="914" height="116" alt="image" src="https://github.com/user-attachments/assets/661f0c69-74a4-42ba-9ca8-c04f4e6b66c9" />
+
 - Semua data ini terhubung langsung dengan database sehingga pembaruan yang dilakukan akan otomatis tersimpan.
 3. Kontrol Aksi CRUD (Create, Read, Update, Delete)
+
+  <img width="565" height="59" alt="image" src="https://github.com/user-attachments/assets/c21ee427-9ab6-41ef-b5e4-99be3e03c0a1" />
+
 - Lihat Lokasi 🟠 : menampilkan lokasi laporan dalam peta interaktif yang tersambung ke Full Map View.
+
+  <img width="816" height="513" alt="image" src="https://github.com/user-attachments/assets/40520493-eb49-4ac5-9c6c-d36af982874d" />
+
 - Hapus Laporan 🔴 : menghapus laporan yang tidak valid atau sudah tidak diperlukan.
+  
+  <img width="816" height="512" alt="image" src="https://github.com/user-attachments/assets/e239f82b-5f2c-4025-a76c-bf30463ee5b9" />
+
 - Lihat Detail 🟡 : menampilkan informasi laporan secara rinci termasuk alamat, deskripsi, dan waktu pengiriman.
+  
+  <img width="815" height="511" alt="image" src="https://github.com/user-attachments/assets/7f3c4336-4242-4871-8e93-35b2ea625f60" />
+
 - Lihat Foto 🟣 : menampilkan bukti foto yang diunggah user saat membuat laporan.
+  
+  <img width="809" height="512" alt="image" src="https://github.com/user-attachments/assets/bf9061d3-ea85-4195-83aa-bd78229e4a97" />
+
 - Ubah Status ⚙️ : memungkinkan admin memperbarui status laporan (misalnya dari menunggu → diproses → selesai).
+
+  <img width="816" height="513" alt="image" src="https://github.com/user-attachments/assets/23dacf75-bc33-4259-800c-784a26eb1a34" />
+
 4. Navigasi “Kembali”
 - Tombol di pojok kiri atas untuk kembali ke halaman utama admin tanpa kehilangan data yang sedang dikelola.
 
@@ -604,29 +743,64 @@ Tampilan ini didesain agar admin dapat melakukan pengelolaan data dengan cepat d
 
 <details>
 <summary>🏗️ Halaman Kelola Fasilitas (Admin Add & Edit Facility)</summary>
+
+<img width="822" height="523" alt="image" src="https://github.com/user-attachments/assets/abc3cdfe-ca8d-4990-948d-37d18dbfeda9" />
+
 Halaman Admin Add & Edit Facility merupakan fitur bagi admin untuk mengelola seluruh data fasilitas hijau yang ada dalam sistem Bumi Nusantara Project.
 Melalui halaman ini, admin memiliki kemampuan penuh untuk menambah fasilitas baru, memperbarui data fasilitas yang sudah ada, menghapus fasilitas lama, serta melihat lokasi dan detailnya secara langsung.
 
 Halaman ini menjadi pusat aktivitas pengelolaan data yang terhubung langsung ke tabel fasilitas dalam database, termasuk entitas turunan seperti Bank Sampah, TPA, dan Tapak Berkelanjutan, yang semuanya tercantum pada struktur ERD.
 
 **⚙️ Fitur Utama**
-1. Input Data Fasilitas
-- Terdiri dari beberapa kolom penting:
-  - Nama Fasilitas 
-  - Jenis Fasilitas (dropdown berisi pilihan seperti Taman, Bank Sampah, Tapak Berkelanjutan, TPA)
-  - Lokasi 
-  - Kelurahan 
-- Semua data ini wajib diisi sebelum menambahkan fasilitas baru.
-2. Tombol Aksi CRUD (Create, Read, Update, Delete)
-- Tambah Fasilitas 🟢 : digunakan untuk menambahkan data fasilitas baru.
-- Perbarui Fasilitas 🔵 : mengedit atau memperbarui informasi fasilitas yang sudah terdaftar.
-- Hapus Fasilitas 🔴 : menghapus data fasilitas yang sudah tidak aktif atau tidak relevan.
-- Pilih Lokasi 🟣 : membuka tampilan peta (terhubung dengan Full Map View) untuk menandai titik lokasi fasilitas baru.
-- Lihat Detail 🟡 : menampilkan rincian lengkap dari fasilitas yang dipilih, termasuk jenis, lokasi, dan kelurahannya.
-3. Tabel Data Fasilitas
-- Menampilkan daftar seluruh fasilitas yang tersimpan di sistem, meliputi kolom Nama, Jenis, Lokasi, dan Kelurahan.
-- Data pada tabel ini diperbarui secara dinamis setelah admin menambah, mengedit, atau menghapus data fasilitas.
-4. Navigasi Kembali
-- Tombol “Kembali” di bagian atas memungkinkan admin untuk kembali ke halaman utama tanpa kehilangan data yang telah diinput.
+Pada saat masuk kedalam halaman Menu Fasilitas, akan tertampil berbagai Tombol yang mengarahkan ke berbagai halaman fasilitas-fasilitas yang terintegrasi. Berupa: 
+1. Menu Tapak
+- Pada Menu Tapak ini, berisi berbagai data yang berisikan data-data Tapak Berkelanjutan, yang dapat ditambahkan oleh Admin, seperti menambahkan nama, jenis(dengan pilihan drop down), nama jalan, luas lahan, kondisi((dengan pilihan drop down juga), dan Kelurahan. 
+
+<img width="816" height="513" alt="image" src="https://github.com/user-attachments/assets/b9c100ee-6495-4b94-9164-31a42625766a" />
+
+- Selain itu, admin juga dapat melakukan CRUD pada menu menambahkan Fasilitas Tapak ini. Seperti, melihat Koordinat, menambah fasilitas lagi pada data Fasilitas Tapak, menghapus fasilitas, memperbarui fasilitas, dan juga melihat detail fasilitas tersebut.
+
+- Untuk fitur melihat koordinat, masih sama seeperti melihat koordinat pada fitur lainnya, dengan halaman akan menampilkan tampilan Maps, lalu Admin bisa memilih dan mensortir di dalam tampilan maps tersebut.
+- Kemudian, untuk Menambahkan fasilitas, contohnya tampilan setelah di tambahkan adalah seperti ini:
+  
+   <img width="818" height="513" alt="image" src="https://github.com/user-attachments/assets/74686b51-345d-4990-930c-11614c71695f" />
+
+- Lalu, untuk fitur mengahapus fasilitas Tapak, tampilan nya akan menjadi seperti ini:
+  
+   <img width="818" height="513" alt="image" src="https://github.com/user-attachments/assets/f10b3b42-ab73-4f22-bfc6-685d8efd1055" />
+
+- Untuk melihat detail Fasilitas Tapak, tampilan nya akan menjadi seperti berikut:
+
+   <img width="812" height="511" alt="image" src="https://github.com/user-attachments/assets/4f518898-9fea-447d-a3b2-d5e0ea1738df" />
+
+- Dan terakhir, untuk memperbarui Data pada Fasilitas tapak, hasil akhir nya akan menjadi seperti ini:
+  
+   <img width="813" height="513" alt="image" src="https://github.com/user-attachments/assets/ecc62100-528f-4f3c-bb58-77c4219d2386" />
+
+2. Menu TPA
+- Untuk menu-menu yang ditampilkan pada halaman menambahkan Fasilitas TPA ini, masih memiliki fitur yang sama seperti yang ada pada menu Fasilitas Tapak Berkelanjutan, yang dimana Admin dapat melakukan CRUD dengan lengkap.
+- Namun berikut tampilan untuk Menu TPA:
+  
+   <img width="816" height="513" alt="image" src="https://github.com/user-attachments/assets/e4bbdc34-fcfd-4da0-9952-76b595c322c1" />
+
+3. Menu Bank Sampah
+- Pada Menu Bank Sampah ini, merupakan Fitur fasilitas yang dapat melihat Jam operasional, nama Bank Sampah, lokasi jalan, pengelola bank sampah, kontak, dan Kelurahan letak bank sampah berada.
+- Pada fitur di menu ini, masih saja seperti fitur sebelumnya, yang dimana admin dapat memilih koordinat, menambah fasilitas, memperbarui, menghapus, dan melihat lebih detail.
+- Dan berikut merupakan tampilan halaman fitur fasilitas Bank Sampah.
+   <img width="816" height="513" alt="image" src="https://github.com/user-attachments/assets/fc1bc9d9-8b3f-40c7-a45b-9c6b01a92b8c" />
+
+4. Lihat Detail
+- Dan yang terakhir, Lihat Detail merupakan fitur menu yang ada pada Menu Fasilitas, yang berisi Tabel data berbagai Fasilitas yang terintegrasi, lalu ketika salah satu data di klik, maka akan muncul pop up Detail Fasilitas.
+  Seperti yang ada pada contoh dibawah ini.
+
+   <img width="819" height="527" alt="image" src="https://github.com/user-attachments/assets/7eea6a4a-595e-4171-965c-2c8f0b542ce5" />
 
 </details>
+
+<details>
+<summary>🏛️Menu Kelurahan (Admin Add & Edit Kelurahan) </summary>
+
+<img width="816" height="513" alt="image" src="https://github.com/user-attachments/assets/a79656ce-80c9-48ff-a71a-1cdae0030225" />
+
+- Gambar diatas merupakan tampilan dari halaman fitur Menu Kelurahan, yang dimana, admin dapat Menyortir berdasarkan nama kelurahan, lokasi kelurahan, dan zona(dengan fitur dropdown) dan melakukan CRUD di dalamnya.
+- Yang dimana, CRUD di lakukan dengan memilih koordinat, menambah kelurahan, memperbarui kelurahan, menghapus kelurahan, dan melihat dengan detail data yang ada pada halaman ini.
