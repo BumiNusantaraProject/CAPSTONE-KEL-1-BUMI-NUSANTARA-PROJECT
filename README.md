@@ -387,36 +387,48 @@ Program ini terdiri dari beberapa Frame dan Panel utama yang terbagi menjadi dua
 Melalui tampilan-tampilan berikut, dapat terlihat bagaimana sistem ini bekerja secara menyeluruh, mulai dari tahap login hingga proses pengelolaan data lingkungan.
 Setiap bagian dilengkapi dengan deskripsi dan fungsi masing-masing GUI, agar pengguna maupun pengembang dapat memahami alur penggunaan program dengan lebih mudah dan terstruktur.
 
-### 🌿 Halaman Menu Login (Pemilihan Peran)
+<details>
+<summary>🌿 Halaman Menu Login (Pemilihan Peran)</summary>
 Halaman Menu Login merupakan tampilan pembuka dan merupakan gerbang utama sistem “Sistem Monitoring dan Pengelolaan Fasilitas Hijau”.
 Tujuannya adalah untuk mengarahkan pengguna agar memilih peran (role) sebelum melakukan proses login, yaitu User (masyarakat umum) atau Admin (pihak pengelola/pemerintah).
 
 Sistem ini menerapkan dua tingkat akses berbeda, sehingga pemilihan peran sejak awal membantu aplikasi menampilkan halaman login yang sesuai dengan hak akses pengguna.
 
+</details>
 
-### 🌱 Halaman Login User
+<details>
+<summary>🌱 Halaman Login User</summary>
 Halaman ini merupakan tampilan login khusus bagi pengguna (User/Masyarakat) dalam sistem Sistem Monitoring dan Pengelolaan Fasilitas Hijau.
 Pada halaman ini, pengguna dapat melakukan autentikasi menggunakan email dan password sebelum masuk ke dalam sistem.
 Tampilan dirancang dengan konsep green interface yang menonjolkan nilai keberlanjutan dan selaras dengan tema utama proyek Bumi Nusantara Project.
 
-### 🌳 Halaman Login Admin
+</details>
+
+<details>
+<summary>🌳 Halaman Login Admin</summary>
 Halaman ini merupakan tampilan login khusus bagi Admin atau pihak pengelola sistem dalam aplikasi Sistem Monitoring dan Pengelolaan Fasilitas Hijau.
 Pada halaman ini, admin dapat masuk menggunakan akun resmi untuk mengakses fitur pengelolaan data, seperti verifikasi laporan, pembaruan fasilitas hijau, serta evaluasi zona wilayah.
 Tampilan dirancang dengan konsep yang seragam dengan halaman login user, menampilkan nuansa hijau alami dan visual pohon besar sebagai simbol pengawasan serta pertumbuhan berkelanjutan.
 
-### 🌼 Halaman Registrasi Akun
+</details>
+
+<details>
+<summary>🌼 Halaman Registrasi Akun</summary>
 Halaman ini berfungsi sebagai tempat bagi pengguna baru yang belum memiliki akun untuk melakukan registrasi sebelum dapat mengakses sistem Sistem Monitoring dan Pengelolaan Fasilitas Hijau.
 Melalui halaman ini, masyarakat dapat membuat akun dengan mengisi email dan password, yang nantinya tersimpan dalam basis data dan digunakan untuk proses login.
 
 Desain tampilan dibuat sederhana dan interaktif, menampilkan warna hijau alami dengan latar foto aktivitas luar ruang yang menggambarkan interaksi manusia dan lingkungan.
 Teks sapaan “Hi, buat akun dulu yok!” memberikan nuansa ramah dan mengajak pengguna untuk bergabung secara positif dalam sistem berbasis lingkungan digital ini.
 
-### 🌿 Halaman Utama User (User Home Menu)
+</details>
+
+<details>
+<summary>🌿 Halaman Utama User (User Home Menu)</summary>
 Halaman ini merupakan tampilan utama yang akan muncul setelah user berhasil login ke dalam aplikasi Sistem Monitoring dan Pengelolaan Fasilitas Hijau.
 Dari halaman ini, pengguna dapat mengakses seluruh fitur utama yang disediakan oleh sistem secara terpusat dan efisien.
 Antarmuka didesain dengan visual pepohonan hijau yang tertutup kabut, melambangkan keseimbangan alam dan tanggung jawab bersama dalam menjaga bumi.
 
-#### 🌱 Fitur Utama pada Halaman User
+**🌱 Fitur Utama pada Halaman User**
 1. Laporkan!
 - Fitur ini memungkinkan pengguna untuk mengirim laporan lingkungan, seperti area tidak higienis, taman rusak, atau wilayah yang memerlukan perhatian.
 - User dapat menambahkan detail laporan, alamat lokasi, serta foto pendukung sebelum dikirim ke sistem.
@@ -427,12 +439,15 @@ Antarmuka didesain dengan visual pepohonan hijau yang tertutup kabut, melambangk
 - Fitur ini menampilkan peta digital interaktif dengan titik-titik lokasi fasilitas hijau yang telah dimasukkan dalam sistem.
 - Melalui tampilan ini, user dapat mengetahui persebaran fasilitas di kotanya serta mendukung evaluasi zona hijau (Hijau – Kuning – Merah).
 
-### 🌾 Halaman Tambah Laporan (User Add Report)
+</details>
+
+<details>
+<summary>🌾 Halaman Tambah Laporan (User Add Report)</summary>
 Halaman ini merupakan tampilan yang muncul ketika user memilih fitur “Laporkan!” dari menu utama.
 Di halaman ini, pengguna dapat mengirim laporan mengenai kondisi lingkungan seperti wilayah kotor, taman rusak, atau fasilitas hijau yang tidak terawat.
 Halaman ini menjadi bentuk nyata partisipasi masyarakat dalam mendukung pengelolaan fasilitas hijau berbasis digital, sejalan dengan tujuan Bumi Nusantara Project.
 
-#### 🌱 Fitur Utama pada Halaman Ini
+**🌱 Fitur Utama pada Halaman Ini**
 1. Form Laporan
 - User dapat menulis deskripsi laporan yang menjelaskan kondisi atau masalah yang ditemukan di lapangan.
 - Contohnya: “Tempat sampah penuh di taman Samarendah” atau “Rumput taman di kelurahan Air Hitam mulai kering dan tidak terawat.”
@@ -449,13 +464,16 @@ Halaman ini menjadi bentuk nyata partisipasi masyarakat dalam mendukung pengelol
 - Setelah semua kolom diisi, pengguna dapat menekan tombol ini untuk mengirim laporan ke sistem.
 - Data laporan akan tersimpan dan dapat dilihat di menu “Lihat laporan lain”.
 
-### 🌿 Halaman Fasilitas (User View Fasilitas)
+</details>
+
+<details>
+<summary>🌿 Halaman Fasilitas (User View Fasilitas)</summary>
 Halaman ini merupakan tampilan lanjutan dari menu utama user, di mana pengguna dapat melihat berbagai fasilitas hijau yang sudah terdaftar dalam sistem.
 Fasilitas yang ditampilkan meliputi berbagai jenis sarana pendukung lingkungan seperti TPA (Tempat Pembuangan Akhir), Bank Sampah, Taman, dan Tapak Berkelanjutan, lengkap dengan informasi nama fasilitas, jenis, lokasi, serta kelurahan tempat fasilitas tersebut berada.
 
 Halaman ini membantu masyarakat untuk lebih mengenal fasilitas hijau di sekitarnya, serta menumbuhkan kesadaran akan pentingnya menjaga dan memanfaatkan sarana lingkungan yang sudah tersedia.
 
-#### 🌱 Fitur Utama
+**🌱 Fitur Utama**
 1. Tabel Data Fasilitas
 - Menampilkan daftar seluruh fasilitas yang tersimpan di database berdasarkan data pada tabel fasilitas.
 - Kolom utama terdiri dari Nama, Jenis, Lokasi, dan Kelurahan.
@@ -465,13 +483,16 @@ Halaman ini membantu masyarakat untuk lebih mengenal fasilitas hijau di sekitarn
 3. Tombol “Kembali”
   Mengarahkan user kembali ke halaman utama (User Home Menu).
 
-### 🌾 Halaman Lihat Laporan (User View Report)
+</details>
+
+<details>
+<summary>🌾 Halaman Lihat Laporan (User View Report)</summary>
 Halaman ini merupakan bagian dari fitur pelaporan, di mana user dapat melihat seluruh laporan yang telah dikirimkan oleh berbagai pengguna lain dalam sistem Sistem Monitoring dan Pengelolaan Fasilitas Hijau.
 Tujuan utama halaman ini adalah memberikan transparansi dan kesadaran lingkungan bersama, sehingga masyarakat bisa mengetahui area-area yang sedang dilaporkan atau membutuhkan perhatian.
 
 Melalui halaman ini, user juga dapat meninjau detail laporan, lokasi, serta foto yang dilampirkan, agar dapat memahami kondisi yang terjadi secara lebih nyata di lapangan.
 
-#### 🌱 Fitur Utama
+**🌱 Fitur Utama**
 1. Tabel Data Laporan
 - Menampilkan daftar laporan yang sudah masuk ke sistem, lengkap dengan kolom ID, Kelurahan, Tanggal Lapor, Lokasi, Foto, Deskripsi, dan Status.
 - Data diambil langsung dari tabel laporan pada database.
@@ -484,13 +505,16 @@ Melalui halaman ini, user juga dapat meninjau detail laporan, lokasi, serta foto
 5. Tombol “Kembali”
 - Mengembalikan pengguna ke halaman utama (User Home Menu) dengan satu klik.
 
-### 🗺️ Halaman Wilayah (User Read Area)
+</details>
+
+<details>
+<summary>🗺️ Halaman Wilayah (User Read Area)</summary>
 Halaman User Read Area merupakan fitur yang memungkinkan user melihat kondisi wilayah atau area kelurahan di sekitarnya berdasarkan data fasilitas hijau yang telah tersimpan di sistem Sistem Monitoring dan Pengelolaan Fasilitas Hijau.
 Pada halaman ini, setiap wilayah ditampilkan secara visual menggunakan peta dengan indikator zona warna, yang merepresentasikan tingkat keberlanjutan lingkungan berdasarkan jumlah dan kondisi fasilitas hijau di area tersebut.
 
 Fitur ini memberikan gambaran menyeluruh mengenai zona lingkungan (merah, kuning, dan hijau) sehingga pengguna dapat mengetahui daerah mana yang masih perlu perhatian dalam aspek pengelolaan ruang hijau dan kebersihan kota.
 
-#### 🌱 Fitur Utama
+**🌱 Fitur Utama**
 1. Peta Fullscreen Interaktif
 - Menampilkan peta seluruh wilayah dengan penanda fasilitas hijau, titik laporan, serta zona kelurahan.
 - Pengguna dapat memperbesar area tertentu untuk melihat lokasi fasilitas lebih detail.
@@ -499,13 +523,16 @@ Fitur ini memberikan gambaran menyeluruh mengenai zona lingkungan (merah, kuning
 3. Integrasi dengan Data Sistem
 - Data koordinat (latitude, longitude) diambil langsung dari tabel kelurahan dan fasilitas untuk memastikan akurasi posisi peta.
 
-### 🗺️ Halaman Peta Wilayah (Full Map View)
+</details>
+
+<details>
+<summary>🗺️ Halaman Peta Wilayah (Full Map View)</summary>
 Halaman Full Map View berfungsi sebagai tampilan peta utama yang terhubung langsung dengan seluruh fitur lain yang menampilkan peta dalam sistem Sistem Monitoring dan Pengelolaan Fasilitas Hijau.
 Artinya, setiap kali pengguna ingin melihat lokasi fasilitas, titik laporan, maupun zona wilayah, sistem akan mengarahkan atau membuka tampilan peta penuh ini agar informasi bisa dilihat dengan lebih jelas dan menyeluruh.
 
 Halaman ini memudahkan pengguna untuk menavigasi seluruh data spasial dalam satu tempat terintegrasi, baik itu hasil laporan masyarakat, posisi fasilitas hijau, maupun kondisi zona tiap kelurahan.
 
-#### 🌱 Fitur Utama
+**🌱 Fitur Utama**
 1. Peta Terpadu (Integrated Map View)
 - Menampilkan semua data peta dari berbagai fitur:
   - Titik lokasi laporan dari fitur Lihat Laporan.
@@ -522,14 +549,17 @@ Halaman ini memudahkan pengguna untuk menavigasi seluruh data spasial dalam satu
 - Mengarahkan pengguna kembali ke fitur asal (Laporan, Fasilitas, atau Wilayah) tanpa kehilangan konteks data yang sedang dibuka.
 
 
-### 🖥️ Halaman Utama Admin (Admin Home Menu)
+</details>
+
+<details>
+<summary>🖥️ Halaman Utama Admin (Admin Home Menu)</summary>
 Halaman Admin Home Menu merupakan tampilan utama yang muncul setelah admin berhasil login ke sistem Sistem Monitoring dan Pengelolaan Fasilitas Hijau – Bumi Nusantara Project.
 Halaman ini berfungsi sebagai dashboard pusat kendali bagi admin untuk mengelola seluruh aktivitas sistem, mulai dari verifikasi laporan, pembaruan fasilitas, hingga pemantauan wilayah hijau.
 
 Pada halaman ini, admin disambut dengan sapaan hangat “Hi, selamat datang admin” beserta deskripsi singkat mengenai perannya sebagai pengelola utama sistem.
 Selain dua menu utama, Menu Laporan dan Menu Fasilitas, halaman ini juga dilengkapi dengan tampilan peta mini (mini-map) yang dapat menampilkan lokasi seluruh fasilitas secara langsung.
 
-#### 🌱 Fitur Utama
+**🌱 Fitur Utama**
 1. Menu Laporan
 - Mengarahkan admin ke halaman pengelolaan laporan dari user.
 - Admin dapat melihat daftar laporan, mengedit data, memperbarui status laporan, atau menghapus laporan yang tidak valid.
@@ -546,12 +576,15 @@ Selain dua menu utama, Menu Laporan dan Menu Fasilitas, halaman ini juga dilengk
 - Menyediakan akses ke fitur utama seperti Menu Laporan, Menu Fasilitas, dan Keluar (Logout).
 - Desain minimalis agar navigasi tetap efisien dan responsif.
 
-### 🧾 Halaman Kelola Laporan (Admin Edit Report)
+</details>
+
+<details>
+<summary>🧾 Halaman Kelola Laporan (Admin Edit Report)</summary>
 Halaman Admin Edit Report merupakan tempat bagi admin untuk mengelola seluruh laporan yang dikirim oleh user.
 Di halaman ini, admin memiliki akses penuh untuk melihat, mengedit, memperbarui status, hingga menghapus laporan, sesuai kebutuhan.
 Tampilan ini didesain agar admin dapat melakukan pengelolaan data dengan cepat dan efisien, disertai antarmuka yang terstruktur dengan baik.
 
-#### ⚙️ Fitur Utama
+**⚙️ Fitur Utama**
 1. Pencarian Berdasarkan ID Laporan
 - Admin dapat memasukkan ID laporan pada kolom pencarian untuk menemukan data tertentu dengan cepat.
 - Tombol “Cari” berfungsi untuk menampilkan hasil laporan yang relevan, sedangkan tombol “Refresh” digunakan untuk menampilkan ulang seluruh data laporan.
@@ -567,13 +600,16 @@ Tampilan ini didesain agar admin dapat melakukan pengelolaan data dengan cepat d
 4. Navigasi “Kembali”
 - Tombol di pojok kiri atas untuk kembali ke halaman utama admin tanpa kehilangan data yang sedang dikelola.
 
-### 🏗️ Halaman Kelola Fasilitas (Admin Add & Edit Facility)
+</details>
+
+<details>
+<summary>🏗️ Halaman Kelola Fasilitas (Admin Add & Edit Facility)</summary>
 Halaman Admin Add & Edit Facility merupakan fitur bagi admin untuk mengelola seluruh data fasilitas hijau yang ada dalam sistem Bumi Nusantara Project.
 Melalui halaman ini, admin memiliki kemampuan penuh untuk menambah fasilitas baru, memperbarui data fasilitas yang sudah ada, menghapus fasilitas lama, serta melihat lokasi dan detailnya secara langsung.
 
 Halaman ini menjadi pusat aktivitas pengelolaan data yang terhubung langsung ke tabel fasilitas dalam database, termasuk entitas turunan seperti Bank Sampah, TPA, dan Tapak Berkelanjutan, yang semuanya tercantum pada struktur ERD.
 
-#### ⚙️ Fitur Utama
+**⚙️ Fitur Utama**
 1. Input Data Fasilitas
 - Terdiri dari beberapa kolom penting:
   - Nama Fasilitas 
@@ -593,3 +629,4 @@ Halaman ini menjadi pusat aktivitas pengelolaan data yang terhubung langsung ke 
 4. Navigasi Kembali
 - Tombol “Kembali” di bagian atas memungkinkan admin untuk kembali ke halaman utama tanpa kehilangan data yang telah diinput.
 
+</details>
