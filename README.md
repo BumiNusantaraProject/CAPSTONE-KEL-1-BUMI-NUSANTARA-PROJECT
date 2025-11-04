@@ -41,12 +41,15 @@ Seluruh data disimpan dan dikelola secara terpusat melalui basis data, sehingga 
 
 <img width="4104" height="5561" alt="PA Bumi Nusantara-Page-3 drawio (1)" src="https://github.com/user-attachments/assets/6deee645-d730-4ad4-a869-aac333594280" />
 
+`Link Flowchart`: https://drive.google.com/file/d/1IyUKZ35cYsAgoePaNqLQ-fqvQrvcr5-V/view?usp=sharing
 </details>
 
 <details>
 <summary>USE CASE DIAGRAM</summary>
     
 <img width="961" height="1306" alt="usecasecapstone-Salinan Halaman-1 drawio (2)" src="https://github.com/user-attachments/assets/76842bb8-0976-4104-b3cf-a3ed8abfb8fd" />
+
+`Link UseCase`: https://drive.google.com/file/d/1SPH8l4gctePvcz7cJU9fYCYWgbnFC3Gp/view?usp=sharing 
 
 </details>
 
