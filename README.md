@@ -11,6 +11,13 @@
 
 ---
 
+### Anggota Kelompok:
+1. Adella Putri (2409116006)
+2. Jen Agresia Misti (2409116007)
+3. Fikri Abiyyu Rahman (2409116063)
+4. Dafa Firdaus (2409116093)
+5. Jabbar Hafizh Abdillah (2409116116)
+
 ## Deskripsi Singkat Program
 
 Aplikasi **“Sistem Monitoring dan Pengelolaan Fasilitas Hijau”** merupakan program berbasis **Java** yang dikembangkan dengan menerapkan **lima pilar utama Pemrograman Berorientasi Objek (Object-Oriented Programming / OOP)**, yaitu **Encapsulation**, **Inheritance**, **Abstraction**, **Polymorphism**, dan **Interface**.  
