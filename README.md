@@ -24,6 +24,27 @@ Seluruh data disimpan dan dikelola secara terpusat melalui basis data, sehingga 
 
 ---
 
+
+<details>
+<summary>FLOWCHART PROGRAM</summary>
+
+<img width="2512" height="1411" alt="PA Bumi Nusantara-Page-1 drawio (1)" src="https://github.com/user-attachments/assets/6f633377-829a-4526-a712-cad64e8d6f0b" />
+
+<img width="2331" height="2069" alt="PA Bumi Nusantara-Page-2 drawio (1)" src="https://github.com/user-attachments/assets/4cc9c01c-3dc9-4ee4-911f-5270b31dbff0" />
+
+<img width="4104" height="5561" alt="PA Bumi Nusantara-Page-3 drawio (1)" src="https://github.com/user-attachments/assets/6deee645-d730-4ad4-a869-aac333594280" />
+
+</details>
+
+<details>
+<summary>USE CASE DIAGRAM</summary>
+    
+<img width="961" height="1306" alt="usecasecapstone-Salinan Halaman-1 drawio (2)" src="https://github.com/user-attachments/assets/76842bb8-0976-4104-b3cf-a3ed8abfb8fd" />
+
+</details>
+
+---
+
 # 🧩 Analisis Penerapan 5 Pilar OOP pada Package `Model`
 Proyek **Sistem Monitoring dan Pengelolaan Fasilitas Hijau** dikembangkan menggunakan bahasa pemrograman **Java** dengan paradigma **Object-Oriented Programming (OOP)**.  
 Seluruh file dalam package `Model` telah menerapkan kelima pilar utama OOP, yaitu:
@@ -48,77 +69,93 @@ private String nama_fasilitas;
 private String jenis_fasilitas;
 private String lokasi;
 private String id_kelurahan;
+private double latitude;
+private double longitude;
 
 public int getId_fasilitas() { return id_fasilitas; }
 public void setId_fasilitas(int id_fasilitas) { this.id_fasilitas = id_fasilitas; }
 
 public String getNama_fasilitas() { return nama_fasilitas; }
 public void setNama_fasilitas(String nama_fasilitas) { this.nama_fasilitas = nama_fasilitas; }
-
-public String getJenis_fasilitas() { return jenis_fasilitas; }
-public void setJenis_fasilitas(String jenis_fasilitas) { this.jenis_fasilitas = jenis_fasilitas; }
 ```
 
 Kode ini terdapat pada package `Model`, file `Fasilitas.java`.<br>
-Atribut id_fasilitas, nama_fasilitas, dll dijadikan private agar tidak bisa diakses langsung. <br> Akses dan modifikasi dilakukan hanya lewat getter–setter untuk menjaga integritas data.
+Atribut `id_fasilitas`, `nama_fasilitas`, dll dijadikan private agar tidak bisa diakses langsung. <br> Akses dan modifikasi dilakukan hanya lewat getter–setter untuk menjaga integritas data.
 
-### 📁 b. `BankSampah.java` (Package: `Model`)
-```java
-private String nama_pengelola;
-private String kontak;
-private String jam_operasional;
 
-public String getNama_pengelola() { return nama_pengelola; }
-public void setNama_pengelola(String nama_pengelola) { this.nama_pengelola = nama_pengelola; }
-
-public String getKontak() { return kontak; }
-public void setKontak(String kontak) { this.kontak = kontak; }
-
-public String getJam_operasional() { return jam_operasional; }
-public void setJam_operasional(String jam_operasional) { this.jam_operasional = jam_operasional; }
-```
-
-Kode ini berada pada `Model.BankSampah`. <br>
-Enkapsulasi melindungi informasi internal bank sampah (seperti pengelola dan kontak).
-
-### 📁 c. `TPA.java`
-```java
-private String status;
-private double kapasitas_maks_ton;
-
-public String getStatus() { return status; }
-public void setStatus(String status) { this.status = status; }
-
-public double getKapasitas_maks_ton() { return kapasitas_maks_ton; }
-public void setKapasitas_maks_ton(double kapasitas_maks_ton) { this.kapasitas_maks_ton = kapasitas_maks_ton; }
-```
-
-Kode ini berada di `Model.TPA`. <br>
-Menjaga agar kapasitas dan status tidak dapat dimodifikasi sembarangan tanpa prosedur yang benar.
-
-### 📁 d. `Kelurahan.java`
+### 📁 b. `Kelurahan.java`
 ```java
 private String id_kelurahan;
 private String nama_kelurahan;
 private String lokasi_kelurahan;
 private String zona;
+private double latitude;
+private double longitude;
 
-public String getId_kelurahan() { return id_kelurahan; }
-public void setId_kelurahan(String id_kelurahan) { this.id_kelurahan = id_kelurahan; }
+public String getNama_kelurahan() { return nama_kelurahan; }
+public void setNama_kelurahan(String nama_kelurahan) { this.nama_kelurahan = nama_kelurahan; }
 ```
 
-Berada pada package `model.Kelurahan`.<br>
-Menjaga integritas data kelurahan dan zona lingkungan dari akses langsung.
+Atribut seperti `id_kelurahan`, `zona`, dan `lokasi_kelurahan` dilindungi dari akses langsung.<br>
+Hal ini memastikan data administratif setiap kelurahan tetap aman dan terkontrol.
 
-### 📁 e. `Laporan.java` & `User.java`
+### 📁 c. `Laporan.java` 
 ```java
 private int id_laporan;
 private int id_user;
-private String email;
-private String password;
+private String id_kelurahan;
+private String alamat_lokasi;
+private byte[] foto;
+private String deksripsi;
+private String status;
+private Timestamp tanggal_lapor;
 ```
 
-Dua file ini `(model.Laporan & model.User)` menggunakan `enkapsulasi` untuk melindungi data sensitif seperti email, password, dan laporan pengguna.
+Atribut pada kelas Laporan dibuat private agar data sensitif tidak bisa diakses langsung dari luar.<br>
+Selain itu, method `setStatus()` juga menerapkan validasi internal agar nilai status laporan hanya dapat berupa:<br>
+Menunggu, Diproses, atau Selesai.
+
+### 📁 d. `User.java`
+```java
+private int id_user;
+private String email;
+private String password;
+private String role;
+
+public String getEmail() { return email; }
+public void setEmail(String email) { this.email = email; }
+
+public String getPassword() { return password; }
+public void setPassword(String password) { this.password = password; }
+```
+
+`User.java` menggunakan `enkapsulasi` untuk melindungi informasi penting seperti email dan password.<br>
+Akses langsung ke atribut dicegah demi keamanan akun pengguna.<br>
+Proses validasi data juga dilakukan melalui method validate(),<br>
+agar email dan password wajib diisi dengan benar.
+
+
+### 📁 e. `BankSampah.java`, `TPA.java`, dan `TapakBerkelanjutan.java`
+Ketiga kelas turunan Fasilitas ini juga menerapkan enkapsulasi pada atribut-atribut khususnya, seperti:
+```java
+
+private String nama_pengelola;
+private String kontak;
+private String jam_operasional;
+private String status;
+private double kapasitas_maks_ton;
+private double luas_lahan;
+private String kondisi;
+```
+
+Semua atribut ini dijaga menggunakan akses private dan hanya dapat dimodifikasi melalui konstruktor<br> 
+atau setter bawaan dari kelas induk. Hal ini menjaga agar data setiap fasilitas spesifik tetap aman<br> 
+dari perubahan yang tidak sah.
+
+---
+
+🔎 Penerapan `enkapsulasi` pada seluruh kelas di package Model menunjukkan pengelolaan data yang aman dan terstruktur.
+Dengan menjadikan atribut sebagai private serta menyediakan akses terkontrol melalui getter–setter dan validasi, sistem memastikan setiap entitas seperti Fasilitas, Laporan, dan User hanya dapat dimanipulasi melalui jalur resmi yang sudah ditentukan — mendukung keamanan dan keandalan data.
 
 ---
 
@@ -132,10 +169,14 @@ Mewarisi atribut dan method dari kelas induk agar bisa digunakan ulang oleh kela
 ### 📁 a. `BankSampah.java`
 ```java
 public class BankSampah extends Fasilitas {
+    private String nama_pengelola;
+    private String kontak;
+    private String jam_operasional;
+
     public BankSampah(int id_fasilitas, String nama_fasilitas, String jenis_fasilitas,
-                      String lokasi, String id_kelurahan,
+                      String lokasi, String id_kelurahan, double latitude, double longitude,
                       String nama_pengelola, String kontak, String jam_operasional) {
-        super(id_fasilitas, nama_fasilitas, jenis_fasilitas, lokasi, id_kelurahan);
+        super(id_fasilitas, nama_fasilitas, jenis_fasilitas, lokasi, id_kelurahan, latitude, longitude);
         this.nama_pengelola = nama_pengelola;
         this.kontak = kontak;
         this.jam_operasional = jam_operasional;
@@ -143,42 +184,71 @@ public class BankSampah extends Fasilitas {
 }
 ```
 
-Kelas `BankSampah` merupakan kelas turunan dari `Fasilitas`. <br>
-Keyword extends menunjukkan pewarisan, dan `super()` digunakan untuk memanggil konstruktor dari kelas induk.<br>
-Dengan ini, semua atribut dasar fasilitas otomatis dimiliki oleh BankSampah. 
+Kelas `BankSampah` mewarisi semua atribut dan perilaku dari kelas induk `Fasilitas`,seperti `nama_fasilitas`, `lokasi`, `jenis_fasilitas`, serta `koordinat latitude dan longitude`.<br> 
+Dengan menggunakan keyword `extends`, kelas ini dapat langsung menggunakan semua method dari `Fasilitas,` tanpa harus menuliskannya ulang.
+
+Selain itu, method super() di dalam konstruktor digunakan untuk memanggil konstruktor dari kelas induk, yang membantu menginisialisasi atribut dasar dari objek Fasilitas.
 
 ### 📁 b. `TPA.java`
 ```java
 public class TPA extends Fasilitas {
+    private String status;
+    private double kapasitas_maks_ton;
+
     public TPA(int id_fasilitas, String nama_fasilitas, String jenis_fasilitas,
-               String lokasi, String id_kelurahan, String status, double kapasitas_maks_ton) {
-        super(id_fasilitas, nama_fasilitas, jenis_fasilitas, lokasi, id_kelurahan);
+               String lokasi, String id_kelurahan, double latitude, double longitude,
+               String status, double kapasitas_maks_ton) {
+        super(id_fasilitas, nama_fasilitas, jenis_fasilitas, lokasi, id_kelurahan, latitude, longitude);
         this.status = status;
         this.kapasitas_maks_ton = kapasitas_maks_ton;
     }
 }
 ```
 
-Kelas TPA juga menurunkan sifat dari `Fasilitas`. <br>
-Penggunaan `super()` menginisialisasi atribut dasar dari induk. <br>
-Menunjukkan praktik pewarisan agar atribut umum tidak perlu dideklarasi ulang.
+Kelas `TPA` (Tempat Pembuangan Akhir) juga menurunkan sifat dari `Fasilitas`.<br> 
+Dengan pewarisan, `TPA` otomatis memiliki semua atribut dan fungsi umum dari kelas induknya seperti lokasi dan koordinat.<br> 
+Atribut `tambahan status` dan `kapasitas_maks_ton` kemudian memperluas perilaku TPA agar sesuai dengan konteksnya sebagai fasilitas pengelolaan sampah.
 
 ### 📁 c. `TapakBerkelanjutan.java`
 ```java
 public class TapakBerkelanjutan extends Fasilitas {
+    private double luas_lahan;
+    private String kondisi;
+
     public TapakBerkelanjutan(int id_fasilitas, String nama_fasilitas, String jenis_fasilitas,
-                              String lokasi, String id_kelurahan,
+                              String lokasi, String id_kelurahan, double latitude, double longitude,
                               double luas_lahan, String kondisi) {
-        super(id_fasilitas, nama_fasilitas, jenis_fasilitas, lokasi, id_kelurahan);
+        super(id_fasilitas, nama_fasilitas, jenis_fasilitas, lokasi, id_kelurahan, latitude, longitude);
         this.luas_lahan = luas_lahan;
         this.kondisi = kondisi;
     }
 }
 ```
 
-`TapakBerkelanjutan` mewarisi seluruh atribut umum `fasilitas` seperti `nama_fasilitas`, `lokasi`, dll. <br>
-Selain itu, ia menambahkan atribut unik `luas_lahan` dan kondisi yang khusus untuk jenis fasilitas ini.
+Kelas `TapakBerkelanjutan` juga merupakan turunan dari `Fasilitas`.<br> 
+Dengan mewarisi atribut umum seperti `nama_fasilitas`, `jenis_fasilitas`, dan `lokasi`, kelas ini hanya perlu menambahkan<br> 
+atribut baru `(luas_lahan dan kondisi)` yang spesifik untuk jenis fasilitas hijau berkelanjutan.
 
+Pewarisan ini memudahkan proses pengembangan, karena setiap jenis fasilitas hanya perlu menambahkan detail uniknya masing-masing.
+
+### 📁 d. `Struktur Hierarki Pewarisan`
+Struktur pewarisan pada package Model dapat digambarkan sebagai berikut:
+```mermaid
+classDiagram
+    IFasilitas <|-- Fasilitas
+    Fasilitas <|-- BankSampah
+    Fasilitas <|-- TPA
+    Fasilitas <|-- TapakBerkelanjutan
+```
+
+Kelas Fasilitas bertindak sebagai kelas induk yang berisi atribut umum dari seluruh jenis fasilitas, sedangkan<br> 
+kelas BankSampah, TPA, dan TapakBerkelanjutan adalah kelas turunan yang memperluas fungsionalitasnya.
+
+---
+
+🔎 Penerapan pewarisan `(inheritance)` dalam package Model memperlihatkan desain yang rapi dan efisien.
+Kelas Fasilitas menjadi fondasi utama bagi seluruh jenis fasilitas, sementara kelas-kelas turunannya (BankSampah, TPA, dan TapakBerkelanjutan) menambahkan atribut unik masing-masing.
+Dengan begitu, sistem menjadi lebih modular, konsisten, dan mudah diperluas untuk jenis fasilitas hijau lain di masa mendatang.
 
 ---
 
@@ -191,36 +261,77 @@ Abstraksi digunakan untuk menyembunyikan detail kompleks, hanya menampilkan bagi
 
 ### 📁 a. `Fasilitas.java`
 ```java
-public abstract class Fasilitas implements IFasilitas {
-    @Override
-    public abstract void tampilkanInfo();
+public void tampilkanInfo() {
+    System.out.println("Fasilitas: " + nama_fasilitas + 
+        " | Jenis: " + jenis_fasilitas + 
+        " | Lokasi: " + lokasi + 
+        " (" + latitude + ", " + longitude + ")");
 }
 ```
-`Fasilitas` merupakan kelas abstrak yang berfungsi sebagai cetak biru (blueprint). <br>
-Method `tampilkanInfo()` dideklarasikan abstrak agar setiap subclass wajib mengimplementasikannya sesuai kebutuhan masing-masing.
+Method `tampilkanInfo()` pada kelas Fasilitas berfungsi sebagai bentuk abstraksi fungsional,<br> 
+karena ia hanya menampilkan informasi utama fasilitas tanpa memperlihatkan bagaimana data tersebut disimpan atau diolah di dalam objek.
+
+Dengan cara ini, pengguna cukup tahu “apa” yang dilakukan method `(menampilkan informasi fasilitas)`,<br> 
+tanpa perlu tahu “bagaimana” cara internalnya bekerja.
 
 ### 📁 b. `Laporan.java`
+Kelas Laporan memiliki banyak atribut seperti foto, deksripsi, dan status, namun tidak semuanya ditampilkan ke publik.
+Dalam implementasinya, sistem dapat menampilkan laporan secara ringkas menggunakan format tertentu, seperti:
 ```java
-public void tampilkanInfo() {
-    System.out.println("Laporan #" + id_laporan);
-    System.out.println("Lokasi: " + alamat_lokasi);
-    System.out.println("Deskripsi: " + deskripsi);
-    System.out.println("Status: " + status);
-    System.out.println("Tanggal: " + tanggal_lapor);
-}
+System.out.println("Laporan #" + id_laporan +
+                   " | Kelurahan: " + nama_kelurahan +
+                   " | Status: " + status);
+
 ```
-`Abstraksi` di Laporan menyembunyikan atribut internal dan hanya menampilkan data penting kepada pengguna.
+Dengan cara ini, abstraksi digunakan untuk menyembunyikan data internal laporan seperti `ID pengguna`, `byte array foto`, dan `timestamp`,
+sehingga hanya informasi penting yang relevan untuk pengguna yang tampil di antarmuka.
 
 ### 📁 c. `Kelurahan.java`
 ```java
 public void tampilkanInfo() {
     System.out.println("Kelurahan: " + nama_kelurahan +
-                       " | Lokasi: " + lokasi_kelurahan +
-                       " | Zona: " + zona);
+            " | Lokasi: " + lokasi_kelurahan +
+            " | Zona: " + zona);
 }
 ```
-Menyediakan representasi ringkas dari data kelurahan tanpa menampilkan seluruh detail internalnya.
+Kelas Kelurahan juga menggunakan abstraksi untuk menyajikan data secara sederhana.<br> 
+Hanya informasi penting seperti `nama kelurahan`, `lokasi`, dan `zona yang ditampilkan`,<br> 
+tanpa membuka detail internal atribut seperti `koordinat` atau `validasi data`.<br> 
 
+Abstraksi ini membuat program lebih mudah digunakan, karena pengguna cukup memanggil satu method<br> 
+untuk mendapatkan gambaran umum tentang objek kelurahan.
+
+### 📁 d. `User.java`
+```java
+public void tampilkanInfo() {
+    System.out.println("User: " + email + " | Role: " + role);
+}
+```
+
+Kelas User menerapkan abstraksi dengan hanya menampilkan informasi umum pengguna seperti `email` dan `peran` (role).<br> 
+Detail sensitif seperti `password` disembunyikan agar aman dan tidak terekspos ke publik.<br> 
+Hal ini juga merupakan bentuk abstraksi keamanan `(security abstraction)` yang umum dalam sistem berbasis pengguna.
+
+### 📁 e. `IFasilitas.java`
+```java
+public interface IFasilitas {
+    void tampilkanInfo();
+}
+```
+
+Interface IFasilitas mendefinisikan method `tampilkanInfo()` tanpa memberikan implementasinya secara langsung.<br> 
+Inilah bentuk abstraksi murni, di mana interface hanya mendeklarasikan apa yang harus dilakukan,<br> 
+sementara bagaimana caranya diatur oleh masing-masing kelas yang mengimplementasikannya.
+
+Hal ini membuat setiap jenis fasilitas `(TPA, BankSampah, TapakBerkelanjutan)` bebas mengatur cara menampilkan<br> 
+informasinya sendiri, selama tetap mengikuti kontrak dari interface.
+
+---
+
+🔎 Penerapan `abstraksi` pada package Model membuat sistem lebih ringkas, aman, dan mudah dipahami.
+Detail internal objek disembunyikan, sementara informasi penting tetap bisa diakses dengan mudah.
+Dengan memanfaatkan method seperti tampilkanInfo() dan interface IFasilitas, sistem berhasil menerapkan abstraksi yang
+memisahkan representasi data dari logika implementasinya, menjadikan program lebih modular dan mudah dikembangkan di masa depan.
 
 ---
 
@@ -231,42 +342,52 @@ Polimorfisme memungkinkan method dengan nama yang sama memiliki perilaku berbeda
 
 ---
 
-### 📁 a. `BankSampah.java`
+### 📁 a. `Fasilitas.java`
 ```java
-@Override
 public void tampilkanInfo() {
-    System.out.println("Bank Sampah: " + getNama_fasilitas());
-    System.out.println("Pengelola: " + nama_pengelola + " | Kontak: " + kontak);
-}
-
-@Override
-public boolean validate() {
-    return super.validate() && nama_pengelola != null && !nama_pengelola.isEmpty();
+    System.out.println("Fasilitas: " + nama_fasilitas + 
+        " | Jenis: " + jenis_fasilitas + 
+        " | Lokasi: " + lokasi + 
+        " (" + latitude + ", " + longitude + ")");
 }
 ```
 
-Method `tampilkanInfo()` dan `validate()` menampilkan perilaku berbeda dari induknya `Fasilitas`, <br> menyesuaikan dengan konteks objek Bank Sampah. 
+Method `tampilkanInfo()` di kelas `Fasilitas` menampilkan informasi umum tentang semua fasilitas.<br> 
+Namun, method ini akan dioverride (ditimpa) oleh setiap kelas turunan agar menampilkan data yang lebih spesifik.<br> 
+Ini merupakan penerapan runtime polymorphism dalam sistem ini.
 
-### 📁 b. `TPA.java`
+### 📁 b. `BankSampah.java`
+```java
+@Override
+public void tampilkanInfo() {
+    System.out.println("Bank Sampah: " + getNama_fasilitas() +
+            " | Pengelola: " + nama_pengelola +
+            " | Kontak: " + kontak);
+}
+```
+
+Kelas BankSampah men-override method `tampilkanInfo()` milik `Fasilitas`.<br> 
+Hasilnya, ketika objek BankSampah dipanggil melalui referensi tipe Fasilitas,<br> 
+yang dijalankan tetap versi milik `BankSampah` sendiri, inilah contoh dynamic method dispatch (polimorfisme dinamis).
+
+Perilaku ini memungkinkan setiap jenis fasilitas menampilkan informasi yang berbeda tanpa mengubah struktur dasarnya.
+
+### 📁 c. `TPA.java`
 ```java
 @Override
 public void tampilkanInfo() {
     System.out.println("TPA: " + getNama_fasilitas() +
-        " | Kapasitas: " + kapasitas_maks_ton + " ton | Status: " + status);
-}
-
-@Override
-public boolean validate() {
-    return super.validate()
-        && kapasitas_maks_ton > 0
-        && status != null
-        && !status.isEmpty();
+            " | Kapasitas: " + kapasitas_maks_ton + " ton" +
+            " | Status: " + status);
 }
 ```
+Kelas `TPA` juga menerapkan method `overriding` terhadap `tampilkanInfo()`.<br> 
+Bedanya, versi ini menampilkan kapasitas dan status operasi `TPA`,<br> 
+yang tidak relevan untuk fasilitas lain seperti `BankSampah`.
 
-Method yang sama (`tampilkanInfo()` dan `validate()`) dioverride  <br> agar menampilkan perilaku khusus pada TPA yang berbeda dengan kelas lain seperti `BankSampah`.
+Dengan begitu, meskipun nama method sama, output dan maknanya menyesuaikan konteks objek yang dipanggil.
 
-### 📁 c. `TapakBerkelanjutan.java`
+### 📁 d. `TapakBerkelanjutan.java`
 ```java
 @Override
 public void tampilkanInfo() {
@@ -274,8 +395,47 @@ public void tampilkanInfo() {
     System.out.println("Luas Lahan: " + luas_lahan + " m² | Kondisi: " + kondisi);
 }
 ```
-Menampilkan detail `fasilitas tapak berkelanjutan`. <br>
-Method `tampilkanInfo()` memiliki perilaku yang unik, meskipun nama method-nya sama dengan kelas lain.
+
+Method `tampilkanInfo()` di kelas `TapakBerkelanjutan` menampilkan informasi yang lebih detail<br>
+terkait luas lahan dan kondisi tapak.<br>
+Perbedaan perilaku ini menunjukkan polimorfisme antar subclass,<br>
+di mana setiap objek memiliki cara sendiri untuk menampilkan datanya.
+
+### 📁 e. `Kelurahan.java`
+```java
+public boolean validate() {
+    return id_kelurahan != null && !id_kelurahan.isEmpty()
+        && nama_kelurahan != null && !nama_kelurahan.isEmpty()
+        && lokasi_kelurahan != null && !lokasi_kelurahan.isEmpty()
+        && zona != null && (zona.equals("hijau") || zona.equals("kuning") || zona.equals("merah"));
+}
+```
+
+Kelas Kelurahan menggunakan method `validate()` sebagai bentuk polimorfisme fungsional.<br>
+Meskipun tidak secara eksplisit mewarisi dari kelas lain, method ini memiliki konsep yang sama dengan validasi di kelas User,<br>
+di mana masing-masing kelas memiliki cara sendiri untuk memverifikasi data internalnya.
+
+### 📁 f. User.java
+```java
+public boolean validate() {
+    return email != null && !email.isEmpty()
+        && password != null && !password.isEmpty()
+        && role != null && (role.equalsIgnoreCase("admin") || role.equalsIgnoreCase("user"));
+}
+```
+
+Kelas User juga menerapkan method `validate()` tetapi dengan logika berbeda dari Kelurahan.<br>
+Inilah bentuk polimorfisme antar kelas berbeda dengan nama method yang sama namun perilaku yang berbeda,<br>
+menunjukkan fleksibilitas desain sistem berbasis objek.
+
+---
+
+🔎 Penerapan `abstraksi` pada package Model membuat sistem lebih ringkas, aman, dan mudah dipahami.
+Penerapan polimorfisme pada package Model menjadikan sistem lebih fleksibel dan efisien.
+Setiap jenis fasilitas dapat memiliki cara unik dalam menampilkan datanya, meskipun menggunakan nama method yang sama.
+Selain itu, method validate() di beberapa kelas juga menunjukkan bahwa sistem ini mampu mengadaptasi perilaku berbeda sesuai konteks objek.
+
+Dengan adanya polimorfisme, sistem mudah diperluas, mudah dirawat, dan tetap konsisten dalam struktur tanpa perlu menduplikasi kode yang sama di berbagai kelas.
 
 ---
 
@@ -289,38 +449,87 @@ Interface mendefinisikan kontrak perilaku umum yang wajib diimplementasikan oleh
 ```java
 public interface IFasilitas {
     void tampilkanInfo();
-    boolean validate();
 }
 ```
 
-Interface `IFasilitas` berfungsi sebagai kontrak standar untuk setiap `fasilitas`. <br>
-Semua kelas yang mengimplementasikannya harus memiliki method `tampilkanInfo()` dan `validate()`.
+Interface IFasilitas berisi satu method abstrak, yaitu `tampilkanInfo()`.<br>
+Method ini menjadi kontrak wajib bagi setiap kelas yang ingin diakui sebagai bagian dari sistem fasilitas.
 
-### 📁 b. Implementasi di Fasilitas.java
+Dengan cara ini, setiap kelas baik `Fasilitas`, `BankSampah`, `TPA`, maupun `TapakBerkelanjutan`,<br>
+harus menyediakan implementasi dari method tersebut sesuai konteks masing-masing.
+
+### 📁 b. Implementasi di Kelas `Fasilitas.java`
 ```java
-public abstract class Fasilitas implements IFasilitas {
+public class Fasilitas implements IFasilitas {
     @Override
-    public abstract void tampilkanInfo();
-
-    @Override
-    public boolean validate() {
-        return nama_fasilitas != null && !nama_fasilitas.isEmpty()
-            && jenis_fasilitas != null && !jenis_fasilitas.isEmpty();
+    public void tampilkanInfo() {
+        System.out.println("Fasilitas: " + nama_fasilitas +
+            " | Jenis: " + jenis_fasilitas +
+            " | Lokasi: " + lokasi +
+            " (" + latitude + ", " + longitude + ")");
     }
 }
 ```
 
-Kelas `Fasilitas` mengimplementasikan `IFasilitas` untuk mewariskan kontrak perilaku ke semua subclass-nya `(TPA, BankSampah, TapakBerkelanjutan)`.
-Dengan cara ini, seluruh jenis fasilitas dipastikan memiliki method `tampilkanInfo() dan validate()`.
+Dengan mengimplementasikan `IFasilitas`, kelas `Fasilitas` memastikan bahwa semua kelas turunannya<br>
+`(TPA, BankSampah, TapakBerkelanjutan)` otomatis juga memiliki kontrak method yang sama,<br>
+dan bisa menyesuaikan perilakunya lewat polimorfisme `(method overriding)`.
+
+### 📁 c. Implementasi Tidak Langsung di Kelas Turunan
+Berikut adalah contoh penerapan kontrak dari IFasilitas secara tidak langsung melalui inheritance:
+```java
+public class BankSampah extends Fasilitas {
+    @Override
+    public void tampilkanInfo() {
+        System.out.println("Bank Sampah: " + getNama_fasilitas() +
+                " | Pengelola: " + nama_pengelola +
+                " | Kontak: " + kontak);
+    }
+}
+```
+
+```java
+public class TPA extends Fasilitas {
+    @Override
+    public void tampilkanInfo() {
+        System.out.println("TPA: " + getNama_fasilitas() +
+                " | Kapasitas: " + kapasitas_maks_ton + " ton" +
+                " | Status: " + status);
+    }
+}
+```
+
+```java
+public class TapakBerkelanjutan extends Fasilitas {
+    @Override
+    public void tampilkanInfo() {
+        System.out.println("Tapak Berkelanjutan: " + getNama_fasilitas());
+        System.out.println("Luas Lahan: " + luas_lahan + " m² | Kondisi: " + kondisi);
+    }
+}
+```
+
+Setiap subclass memiliki implementasi sendiri terhadap method `tampilkanInfo()`.
+Hal ini menunjukkan bagaimana `interface` berfungsi sebagai fondasi perilaku seragam,
+sementara tiap kelas bebas menentukan isi dan logika spesifiknya.
+
+---
+
+🔎 Penerapan `interface` pada package `Model` menjamin bahwa setiap kelas fasilitas dalam sistem memiliki perilaku standar dan dapat saling berinteraksi dengan konsisten.
+Dengan `IFasilitas` sebagai kontrak dasar, sistem menjadi lebih modular, fleksibel, dan mudah diperluas.
+
+Interface ini memperkuat pondasi arsitektur sistem berbasis OOP dengan memastikan semua entitas memiliki identitas perilaku yang seragam namun fleksibel dalam implementasi.
 
 ---
 
 ### 🌍 Sustainability Reflection
-Penerapan lima pilar OOP pada package Model berhasil membentuk sistem yang terstruktur, aman, dan mudah dikembangkan. <br> 
-Melalui konsep enkapsulasi, pewarisan, abstraksi, polimorfisme, dan interface, sistem ini mampu mengelola data <br> 
-fasilitas hijau secara efisien dan konsisten. Desain berbasis objek ini tidak hanya memperkuat arsitektur program, <br> 
-tetapi juga mendukung visi proyek dalam menciptakan sistem monitoring dan pengelolaan fasilitas hijau yang cerdas <br> 
-dan berkelanjutan, <br> sejalan dengan tujuan SDGs.
+Penerapan lima pilar OOP pada package Model membentuk sistem yang terstruktur, efisien, dan mudah dikembangkan.<br>
+Melalui enkapsulasi, data penting terlindungi; pewarisan meminimalkan duplikasi kode;<br>
+abstraksi menyederhanakan kompleksitas; polimorfisme memberi fleksibilitas perilaku;<br>
+dan interface menjaga konsistensi antar objek.
+
+Desain berbasis OOP ini memperkuat fondasi proyek Sistem Monitoring dan Pengelolaan Fasilitas Hijau,<br>
+mendukung konsep Smart City serta tujuan SDGs poin ke-11: Sustainable Cities and Communities. 🌱
 
 ---
 
